@@ -1,0 +1,24 @@
+name: Kinetic
+version: '1.0.0'
+main: me.r1ver.kinetic.Kinetic
+author: r1verthebest
+api-version: 1.8
+description: 'Advanced High-Performance Knockback Manipulation Engine for 1.7.10 and 1.8.9.'
+
+commands:
+  kinetic:
+    aliases: [kb, kbp, knockback]
+    description: 'Comando principal para gerenciar o Kinetic KB.'
+    # O uso abaixo aparece se o comando retornar 'false' no Java
+    usage: '§cUse /<command> <horizontal> <vertical> ou /<command> reload'
+    permission: kinetic.admin
+    permission-message: '&cVocê não tem permissão para gerenciar o Knockback.'
+
+permissions:
+  kinetic.*:
+    description: 'Dá acesso a todas as funções do plugin Kinetic.'
+    children:
+      kinetic.admin: true
+  kinetic.admin:
+    description: 'Permite alterar as configurações e recarregar o plugin.'
+    default: op

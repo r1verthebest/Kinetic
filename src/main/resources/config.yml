@@ -1,0 +1,38 @@
+# +-------------------------------------------------------+
+# |                   Kinetic Knockback                   |
+# |          Ajustes de Velocidade e Movimentação         |
+# +-------------------------------------------------------+
+
+# Configurações Gerais de Knockback
+# Valores recomendados: entre 0.4 e 1.2
+knockback:
+  # Multiplicador Horizontal (Eixos X e Z)
+  # Aumente para o jogador voar mais longe para trás.
+  horizontal: 0.5
+  
+  # Multiplicador Vertical (Eixo Y)
+  # Aumente para o jogador voar mais alto.
+  vertical: 0.5
+
+# Configurações de Otimização e Ambiente
+settings:
+  # Compensação de Lag (TPS)
+  # Ajusta o KB se o servidor estiver abaixo de 18 TPS.
+  compensate-lag: true
+  
+  # Compensação de Latência (Ping)
+  # Ajusta o KB para jogadores com ping acima de 150ms.
+  compensate-ping: true
+  
+  # Exibe informações extras no console (útil para testes).
+  debug-mode: false
+
+# Mensagens do Plugin
+# Suporta cores com o caractere '&'
+messages:
+  no-permission: "&cVocê não tem permissão para usar este comando."
+  update-success: "&aConfigurações de Knockback atualizadas com sucesso!"
+  reload-success: "&aConfigurações e mensagens recarregadas com sucesso!"
+  invalid-value: "&cPor favor, use apenas números positivos."
+  invalid-number: "&cErro: Insira valores numéricos válidos (Ex: 0.8)."
+  only-players: "&cEste comando só pode ser executado por jogadores."
